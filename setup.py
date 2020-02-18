@@ -14,9 +14,9 @@ setuptools.setup(
     url="https://github.com/mohsenie/HuaweiB525Router",
     packages=setuptools.find_packages(),
     install_requires=[
+        'pycryptodome>=3.9.6',
         'IPy>=1.0.0',
         'requests>=2.22.0',
-        'Crypto>=1.4.1',
         'six>=1.14.0'
     ],
     classifiers=[

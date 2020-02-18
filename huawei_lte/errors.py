@@ -60,6 +60,6 @@ class RouterError(Exception):
 
     def __init__(self, response):
         parsed_error = ET.fromstring(response)
-        self.code = parsed_error.findall('code')[0].text
-        self.message = parsed_error.findall('message')[0].text
+        self.code = parsed_error.findall('code')[0].text or ''
+        self.message = parsed_error.findall('message')[0].text or ''
         super(RouterError, self).__init__(self.code + ": " + self.message)

@@ -1,1 +1,5 @@
 **/.idea
+**/build
+**/dist
+**/venv
+**/huawei_lte_python3.egg-info
