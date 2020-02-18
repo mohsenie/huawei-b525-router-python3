@@ -1,5 +1,5 @@
 # Huawei B525 Router Python API
-Python2 code to interact with the underlying API for the Huawei B525 router (tested on model B525s-65a).
+Python3 code to interact with the underlying API for the Huawei B525 router (tested on model B525s-65a).
 This iimplements a proxy for the API calls with some additional features.
 The API responses are in XML.
 Any errors in the API calls are also returned in XML.
@@ -21,6 +21,10 @@ You can use the ```router.features``` function to determine what is supported fo
 - SCRAM authentication code based on the initial code from Marcin: https://github.com/mkorz/b618reboot
 - Aproach to investigating the API - https://www.mrt-prodz.com/blog/view/2015/05/huawei-modem-api-and-data-plan-monitor
 - API Error codes - https://github.com/HSPDev/Huawei-E5180-API
+
+## Build/ install
+$python3 setup.py
+$python3 -m pip install
 
 ## Example usage
 ```python
